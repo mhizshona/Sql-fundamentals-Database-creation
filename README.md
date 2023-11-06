@@ -1,23 +1,24 @@
 # Sql-fundamentals-Database-creation
+![](sql.jpg)
 
-This marks my intro into sql and my journey of becoming conversant with SQL terminologies and functions. I learnt database creation, tables creation and how to query data in a database.
+This marks my intro into **SQL** and my journey of becoming conversant with SQL terminologies and functions. I learnt database creation, tables creation and how to query data in a database.
 
-_DISCLAIMER - The data used in this report does nit in any way represent any instituition or company, just a dummy dataset created by me for this purpose_
+_DISCLAIMER - The data used in this report does not in any way represent any instituition or company, just a dummy dataset created by me for this purpose_.
 
 ### TASKS TO BE CARRIED OUT
 
-![](fsql)
+![](fsql.png)
 
 ### ACTIONS PERFORMED
 
 1. CREATE and USE DATEBASE
 2. TABLE CREATION AND INSERTING VALUES INTO THE TABLES
-3. ADDING PRIMARY AND FOREIGN KEYS TO THE TABLE
+3. ADDING PRIMARY AND FOREIGN KEYS TO THE TABLES
 4. ADDING CONSTRAINTS **NOT NULL** TO THE ID COLUMN
-5. CHANGED The COLUMN Name from Subject to COURSE
+5. CHANGED The COLUMN Name from 'Subject' to 'COURSE'
 6. DROPPED The AGE COLUMN USING AGE USING
 
-### FUNCTIONS
+### GETTING TO WORK
 
 ![](DATAB.png)
 
@@ -69,9 +70,9 @@ I- I MADE A COPY OF THE STUDENTS_INFO TABLE INTO STUDENTS_INFO2 BEFORE PROCEEDIN
 ## ALTERING AND RENAMING TABLES
 
 ### RENAMING         
-BEFORE RENAMING                                                                                        ||                                                                                 AFTER RENAMING
-![](B4T.png)                                                                                           ||                                                                                ![](AT.png)
-
+BEFORE RENAMING       |      AFTER RENAMING
+:--------------------:|:---------------------:
+ ![](B4T.png)         |           ![](AT.png)
 
 - I RENAMED THE COLUMN 'SUBJECT' IN THE STUDENTS_INFO TABLE USING = EXEC sp_rename 'STUDENTS_INFO.SUBJECT', 'COURSE', 'COLUMN';
 - THIS RENAMED THE COLUMN 'SUBJECT' TO 'COURSE';
@@ -79,14 +80,15 @@ BEFORE RENAMING                                                                 
 
 ### ALTERING TABLES
 
-### RENAMING         
-BEFORE DROPPING                                                                                        ||                                                                                AFTER DROPPING
-![](B4T.png)                                                                                           ||                                                                                ![](DC.png)
+### RENAMING 
 
+BEFORE DROPPING       |      AFTER DROPPING
+:--------------------:|:---------------------:
+ ![](B4T.png)         |           ![](DC.png)
 
 - I ALTERED THE STUDENTS_INFO TABLE BY DROPPING THE AGE COLUMN USING = ALTER TABLE STUDENTS_INFO
 DROP COLUMN AGE;
-- THIS DROOPED THE AGE COLUMN
+- THIS DROPPED THE AGE COLUMN
 - I Used SELECT * FROM STUDENTS_INFO TO VIEW THE UPDATED TABLE.
 
 ## THOUGHTS
